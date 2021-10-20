@@ -1,0 +1,78 @@
+/*General*/
+		body{
+			//font-family:calibri,sans-serif;
+		}
+
+		section {
+			padding:45px 0 80px 0;
+			
+		}
+		
+		ul
+		{
+			list-style:none;
+		}
+
+		span
+		{
+			color: red;
+		}
+
+/*Formulaire responsable*/
+
+		#Resp h3
+		{
+			font-weight: bold;
+			text-align: center;
+			font-family: Arial,sans-serif;
+			margin-bottom: 40px;
+			
+		}
+		label
+		{
+			font-size: 17px;
+			color: black;
+			padding-left: 10px;
+			
+		}
+
+		input 
+		{
+			size : 50 px;
+			margin-right : 100px;
+		}
+		
+		#champ
+		{
+			font-family: Arial, sans-serif;
+			font-size: 18px;
+			margin-top: 8px;
+
+		}
+
+			
+		/* boutton ajouter */
+		.btn
+		{
+			color:#fff;
+			font-size : 15px;
+			font-weight: bold;
+			padding: 10px;
+			background-color : #444;
+			border-style: none;
+			border-radius:5px;
+			margin-top :20px;
+			width:200px;
+			transition: all 0.3s ease-in 0s;
+		}
+
+		.btn:hover
+		{
+			color:#fff;
+			background-color : #ddd;
+		}
+
+
+
+
+

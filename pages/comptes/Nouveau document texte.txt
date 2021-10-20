@@ -1,0 +1,41 @@
+/*if(!empty($_POST['user_name']) && !empty($_POST['password']))
+		{
+			$user_name_par_defaut = "admin";
+			$password_par_defaut = "admin123";
+			
+			$user_name_saisi = htmlspecialchars($_POST['user_name']);
+			$password_saisi = htmlspecialchars($_POST['password']);
+			
+			if($user_name_saisi == $user_name_par_defaut && $password_saisi == $password_par_defaut) {
+				$_SESSION['password'] = $password_saisi;
+				header('Location: nvutilisateur.php');
+			}
+		
+			else {
+				$_SESSION['erreurLogin']="<strong>Une erreur est parvenue!</strong> nom d'utilisateur ou mot de passe erroné";
+        			header('Location: ConnexionAdmin.php');			}
+		}
+		
+		else{
+		    $_SESSION['erreurLogin']="<strong>Une erreur est parvenue!</strong> Veuillez remplir tous les champs";
+        			header('Location: ConnexionAdmin.php');		
+		}
+	}*/
+
+<?php
+
+session_start();
+if (isset($_SESSION['erreurLogin']))
+    $erreurLogin = $_SESSION['erreurLogin'];
+else {
+    $erreurLogin = "";
+}
+session_destroy();
+?>
+
+<?php if(!empty($erreurLogin)){?>
+                		<div class="alert alert-danger">
+				
+							<?php echo $erreurLogin ?>
+						</div>
+				     <?php } ?>

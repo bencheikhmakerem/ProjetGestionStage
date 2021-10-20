@@ -1,0 +1,50 @@
+
+body {
+	background: none;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+
+p {
+	font-size: 15px;
+}
+
+a {
+	text-decoration: none;
+	font-size: 15px;
+}
+	a:hover {
+		text-decoration: underline;
+	}
+
+p, a, span{
+	color: black;
+}
+	.scnd-font-color {
+		color: #9DA0A7;
+	}
+
+.horizontal-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+	.horizontal-list li {
+		float: left;
+	}
+
+.clear {
+	clear: both;
+}
+
+.glyphicon {
+	font-size: 25px;
+}
+
+
+	
